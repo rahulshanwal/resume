@@ -1,0 +1,191 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: lightblue;
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  min-height: 100px;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 100px;
+  background: white;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+  margin: 50px;
+}
+
+.side_bar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: #003147;
+  padding: 30px;
+}
+
+.profileText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.imgBox {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profileText h2 {
+  color: #fff;
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+.profileText span {
+  font-size: 0.8em;
+  font-weight: 300;
+}
+.contactInfo {
+  padding-top: 40px;
+}
+.title {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.contactInfo ul {
+  padding: 0px;
+}
+.contactInfo li {
+  list-style: none;
+  margin: 10px 0;
+}
+.contactInfo li a {
+  text-decoration: none;
+}
+.contactInfo li div {
+  display: inline-block;
+}
+.icon {
+  width: 30px;
+  font-size: 18px;
+  color: #03a9f4;
+}
+.contactInfo li span {
+  color: white;
+  font-weight: 300;
+}
+.education h5 {
+  color: #03a9f4;
+  font-weight: 500;
+  margin: 5px 0;
+}
+.education h4 {
+  color: #fff;
+  font-weight: 500;
+  margin: 5px 0;
+}
+.education .university {
+  font-weight: 300;
+}
+.contactInfo.skills .text {
+  color: white;
+  font-weight: 500;
+}
+.contactInfo.skills h4 {
+  margin: 10px 0;
+}
+.contactInfo.skills .percentage {
+  position: relative;
+  width: 100%;
+  height: 6px;
+  display: block;
+  margin-top: 5px;
+  background: #081921;
+}
+.contactInfo.skills .percentage div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #03a9f4;
+}
+.main_container {
+  padding: 0 10px;
+}
+.main_container .title {
+  color: #003147;
+  margin-bottom: 10px;
+  letter-spacing: inherit;
+  font-size: 18px;
+}
+.main_container .title span {
+  font-size: 14px;
+}
+.main_container .about {
+  color: #333;
+  margin-bottom: 10px;
+}
+.box {
+  display: flex;
+  justify-content: flex-start;
+}
+.left-section {
+  min-width: 250px;
+}
+.left-section h4,
+h5 {
+  margin: 5px 0;
+  min-width: 150px;
+  text-transform: uppercase;
+  color: #848c90;
+}
+.left-section .tech {
+  font-weight: 400;
+  font-style: italic;
+}
+.box ul .designation {
+  color: #2a7da2;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.box ul li {
+  margin: 5px;
+  font-size: 16px;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    margin: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .box {
+    flex-direction: column;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #dbdbdb;
+  }
+}
